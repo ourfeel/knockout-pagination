@@ -23,7 +23,7 @@
             this.pageItems(items);
         }, this)
     }
-    _.extend(viewModel.prototype, {
+    _.extend(ViewModel.prototype, {
         isCurrent: function ($data) {
             return $data == ko.unwrap(this.options.pageIndex);
         },
@@ -46,6 +46,6 @@
         }
     });
     var template = {
-      
+
     };
 })(window, ko);
